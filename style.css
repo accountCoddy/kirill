@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: radial-gradient(rgb(131, 3, 153),rgb(49, 49, 160));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img{
+    width: 100%;
+    position: relative;
+    /* right: 25px; */
+}
+
+.card{
+    background-color: cornflowerblue;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 10 rgba(82, 82, 255, 0.62);
+    padding: 20px;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    color: blueviolet;
+    text-shadow: 5px 5px 30px;
+    margin-bottom: 20px;
+}
+
+.text{
+    font-size: 20px;
+    color: rgb(124, 28, 215);
+    margin-bottom: 25px;
+
+}
+
+.signature{
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: antiquewhite;
+}
+
+.heart{
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    position: absolute;
+    rotate: 45deg;
+    right: 0;
+    top: 0;
+}
+
+.heart::before, .heart::after{
+ content: "";
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ background-color: crimson;
+ position: absolute;
+
+}
+
+
+.heart::before{
+    left: -15px;
+}
+
+.heart::after{
+    top: -15px;
+}
